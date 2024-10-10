@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Background Image</title>
+  <style>
+    body {
+      background-image: url('images/bkg-img.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    * {
+      color: blue;
+    }
+
+    .primeiros,
+    .ultimos,
+    #negrito {
+      font-weight: 800;
+    }
+
+    .ultimos {
+      font-size: 10px;
+    }
+
+    .primeiros {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .dotted {
+      border-style: dotted;
+      border-width: 5px 10px 15px 20px;
+    }
+
+    .dashed {
+      border-style: dashed;
+    }
+
+    .solid {
+      border: 5px solid black;
+      border-radius: 100%;
+      width: fit-content;
+      margin: 10px 15px 20px 25px;
+    }
+
+    .bolinha {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .mixed {
+      border-top-style: inset;
+      border-right-style: dotted;
+      border-bottom-style: groove;
+      border-left-style: outset;
+      border-radius: 2px;
+      padding: 10px 20px 30px 40px;
+    }
+
+    #negrito {
+      border-style: inset dotted groove outset;
+      border-width: 1em;
+      color: 'rgba(126, 124, 124, 0.1)';
+    }
+
+    #ultimo-primeiro {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  Alguma coisa
+  <h1>Background Image</h1>
+  <h6 class="primeiros dotted"> h6</h6>
+  <p class="solid bolinha">....</p>
+  <p class="primeiros dashed">Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p class="primeiros solid">Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p class="primeiros ultimos mixed" id="ultimo-primeiro">Este é um exemplo de como adicionar uma imagem de fundo a uma
+    página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p id="negrito">Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p>Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p class="ultimos">Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p class="ultimos">Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+  <p class="ultimos">Este é um exemplo de como adicionar uma imagem de fundo a uma página.</p>
+
+  <div style="width: 300px; height: 100px; border: 1px solid black; margin: 5px; padding: 10px;">
+    Smaller
+  </div>
+
+  <div
+    style="width: 300px; height: 100px; border: 1px solid black; margin: 5px; padding: 10px; box-sizing: border-box;">
+    Bigger
+  </div>
+
+  <label>Telefone:</label>
+  <input type="text" name="tel" maxlength="15" OnKeyPress="formatar('(##) ####-#####',this)">
+</body>
+<script>
+  function formatar(mascara, documento) {
+    let i = documento.value.length;
+    let saida = '#';
+    let texto = mascara.substring(i);
+    while (texto.substring(0, 1) != saida && texto.length) {
+      documento.value += texto.substring(0, 1);
+      i++;
+      texto = mascara.substring(i);
+    }
+  }
+</script>
+
+</html>

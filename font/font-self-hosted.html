@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>CSS - Font</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    @font-face {
+      font-family: "Sixtyfour Convergence";
+      src: url("fonts/Sixtyfour_Convergence/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf");
+    }
+  </style>
+  <style>
+    * {
+      font-family: "Sixtyfour Convergence", sans-serif;
+    }
+
+    .blue-title {
+      color: rgb(13, 13, 203);
+      text-decoration: underline;
+      text-transform: capitalize;
+      text-shadow: 2px 2px 2px rgba(254, 126, 5, 0.5);
+      text-align: center;
+    }
+
+    .black-paragraph {
+      text-indent: 75px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="blue-title">Blue Title</h1>
+  <p class="black-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</body>
+
+</html>

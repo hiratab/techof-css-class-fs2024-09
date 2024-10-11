@@ -1,0 +1,46 @@
+* {
+  color: purple;
+}
+
+body {
+  background-color: honeydew;
+}
+
+td {
+  background-color: rgb(145, 122, 167)
+}
+
+.my-class {
+  color: black;
+  font-weight: 500;
+}
+
+#koni {
+  text-align: end;
+}
+
+#uzon {
+  color: chocolate;
+}
+
+.bla,
+.first-name {
+  color: black;
+  text-align: center;
+}
+
+.bla {
+  background-color: darkseagreen;
+}
+
+.first-name {
+  background-color: navajowhite;
+}
+
+.texto-cor-preta {
+  color: black;
+}
+
+.centralizado {
+  text-align: center;
+}

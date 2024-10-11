@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS - Tables</title>
+  <style>
+    table {
+      width: 90%;
+      border: 1px solid #14110F;
+    }
+
+    th {
+      background-color: #619B8A;
+      color: #14110F;
+      border-bottom: 1px solid #233D4D;
+    }
+
+    td {
+      border-bottom: 1px solid #233D4D;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #FCCA46;
+    }
+
+    tr:nth-child(even) {
+      background-color: #FE7F2D;
+    }
+
+    tr:hover {
+      background-color: #A1C181;
+    }
+
+    tr:nth-last-child(1) td {
+      border-bottom-width: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="john">
+        <td><a href="#">John</a></td>
+        <td><a href="#">Doe</a></td>
+        <td><a href="#">28</a></td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Smith</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Michael</td>
+        <td>Johnson</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>Emily</td>
+        <td>Williams</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Brown</td>
+        <td>31</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

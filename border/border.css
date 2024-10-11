@@ -1,0 +1,68 @@
+* {
+  color: purple;
+}
+
+body {
+  background-color: honeydew;
+}
+
+td {
+  background-color: rgb(145, 122, 167)
+}
+
+.my-class {
+  color: black;
+  font-weight: 500;
+}
+
+p {
+  border: 1px solid black;
+  width: 50px;
+  margin-inline: auto;
+}
+
+.inherit {
+  margin-left: inherit;
+}
+
+#koni {
+  text-align: end;
+}
+
+#uzon {
+  color: chocolate;
+}
+
+.bla,
+.first-name {
+  color: black;
+  text-align: center;
+}
+
+.class-1,
+.class-2,
+.class-3 {
+  margin: 2em 2em 2em 2em;
+  border: 1em solid blue;
+  border-radius: 1em;
+}
+
+.class-1 {
+  background-color: darkseagreen;
+}
+
+.class-2 {
+  background-color: navajowhite;
+}
+
+.class-3 {
+  background-color: sienna;
+}
+
+.texto-cor-preta {
+  color: black;
+}
+
+.centralizado {
+  text-align: center;
+}

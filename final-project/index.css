@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to right, #3b0756, #a0119b);
+  padding: 0.5em;
+}
+
+.navbar {
+  
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 450px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.banner-image, .banner-text  {
+  padding: 0.5em;
+  padding-top: 1em;
+}
+
+.banner-image img {
+  max-width: 60vh;
+}
+@media screen and (max-width: 450px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-image img {
+    max-width: 30vh;
+  }
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white
+}
+.banner-text-buttons {
+  padding-top: 0.5em;
+}
+
+.banner-text-buttons button {
+  background-color:  #ee58aa;
+  color: white;
+  padding: 0.7em;
+  border: 0.1em solid #b83497;
+  border-radius: 0.6em;
+}
+
+.banner-text-buttons button:nth-last-child(1) {
+  background-color:  transparent;
+  color: #da4aa4;
+  padding: 0.7em;
+  border: 0.1em solid #b83497;
+}
+
+.banner-text-buttons button:hover {
+  background-color: #ff62b9;
+  transition: background-color 0.5s;
+}
+
+.banner-text-buttons button:nth-last-child(1):hover {
+  background-color: #ff62b9;
+  color: white;
+  /* border: 1em solid #b83497; */
+  padding: 5em;
+  transition: background-color 0.5s,
+              color 0.5s,
+              padding 0.5s 1s;
+}

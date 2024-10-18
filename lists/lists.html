@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS - Lists</title>
+    <style>
+      .ul-style-type {
+        /*          type    position  image */
+        /* list-style: circle  outside    none; */
+        list-style: none;
+      }
+
+      .ul-style-type li {
+        display: inline;
+      }
+
+      .ol-style-type {
+        list-style: upper-alpha;
+      }
+
+      .ul-image {
+        /*          type position  image */
+        list-style: none inside   url('./image.png');
+        vertical-align: middle;
+      }
+
+      .ul-image li span {
+        vertical-align: middle;
+
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Unordered List</h2>
+    <ul class="ul-style-type">
+        <li>Item 1</li>
+        <!-- <li>Item 2</li> -->
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Unordered List With Image</h2>
+    <ul class="ul-image">
+        <li><span>Item 1</span></li>
+        <li><span>Item 2</span></li>
+        <li><span>Item 3</span></li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol class="ol-style-type">
+        <li>First Item</li>
+        <li>Second Item</li>
+    </ol>
+
+
+    <div class="container">
+      <div class="item">
+        <img src="./image.png" alt="image">
+        <span>Item 1</span>
+      </div>
+      <div class="item">
+        <img src="./image.png" alt="image">
+        <span>Item 1</span>
+      </div>
+      <div class="item">
+        <img src="./image.png" alt="image">
+        <span>Item 1</span>
+      </div>
+    </div>
+  </body>
+</html>

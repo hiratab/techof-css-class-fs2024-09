@@ -53,6 +53,7 @@ nav ul li a {
 }
 
 .banner-image img {
+  width: 100%;
   max-width: 60vh;
 }
 @media screen and (max-width: 450px) {
@@ -76,11 +77,12 @@ nav ul li a {
 }
 
 .banner-text-buttons button {
-  background-color:  #ee58aa;
+  background-color: #ee58aa;
   color: white;
   padding: 0.7em;
   border: 0.1em solid #b83497;
   border-radius: 0.6em;
+  transition: background-color 0.5s;
 }
 
 .banner-text-buttons button:nth-last-child(1) {
@@ -88,19 +90,102 @@ nav ul li a {
   color: #da4aa4;
   padding: 0.7em;
   border: 0.1em solid #b83497;
+  transition: background-color 0.5s,
+              color 0.5s;
 }
 
 .banner-text-buttons button:hover {
   background-color: #ff62b9;
-  transition: background-color 0.5s;
 }
 
 .banner-text-buttons button:nth-last-child(1):hover {
   background-color: #ff62b9;
   color: white;
-  /* border: 1em solid #b83497; */
-  padding: 5em;
-  transition: background-color 0.5s,
-              color 0.5s,
-              padding 0.5s 1s;
+}
+
+.our-study-tracks-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 3fr;
+  gap: 0.4em;
+  padding-top: 1em;
+}
+
+.our-study-tracks-title {
+  grid-column: 1 / 5;
+  text-align: center;
+  color: #a0119b;
+}
+
+.our-study-tracks-title div {
+  width: 5%;
+  margin: auto;
+  border-bottom: #ff62b9;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2em;
+}
+
+.our-study-tracks-description {
+  grid-column: 1 / 5;
+  text-align: center;
+}
+
+.our-study-tracks-track {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.our-study-tracks-track-image {
+  display: flex;
+  justify-content: center;
+}
+
+.our-study-tracks-track-title {
+  text-align: center;
+  color: #a0119b;
+}
+
+.our-study-tracks-track-description {
+}
+
+.our-study-tracks-description p {
+  columns: 2;
+}
+
+
+@media screen and (max-width: 900px) {
+  .our-study-tracks-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0em;
+  }
+
+  .our-study-tracks-title {
+    grid-column: 1 / 3;
+  }
+  
+  .our-study-tracks-description {
+    grid-column: 1 / 3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .our-study-tracks-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0em;
+  }
+
+  .our-study-tracks-title {
+    grid-column: 1 / 2;
+  }
+  
+  .our-study-tracks-description {
+    grid-column: 1 / 2;
+  }
+
+  .our-study-tracks-description p {
+    columns: 1;
+  }
+  
 }
